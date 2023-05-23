@@ -1,0 +1,37 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 2111A
+D 2111A 256 x 4 Bit Static Ram-18 Pin DIP Package-Sub 8111A, 91L11
+K SRAM
+$ENDCMP
+#
+$CMP 74HCT4051
+D 8-channel analog multiplexer/demultiplexer, DIP-16/SOIC-16/TSSOP-16
+K TTL Multiplexer Demultiplexer Analog
+F http://www.ti.com/lit/ds/symlink/cd74hct4051.pdf
+$ENDCMP
+#
+$CMP CD4051
+D 8-channel analog multiplexer/demultiplexer, DIP-16/SOIC-16/TSSOP-16
+K HCMOS Multiplexer Demultiplexer Analog
+F http://www.ti.com/lit/ds/symlink/cd74hc4051.pdf
+$ENDCMP
+#
+$CMP Z8430_CTC
+D Parallel I/O, DIP-40
+K Z80 PIO parallel
+F https://www.zilog.com/appnotes_download.php?FromPage=DirectLink&dn=PS0180&ft=Product%20Specification%20(Data%20Sheet)%20%20&f=YUhSMGNEb3ZMM2QzZHk1NmFXeHZaeTVqYjIwdlpHOWpjeTk2T0RBdmNITXdNVGd3TG5Ca1pnPT0=
+$ENDCMP
+#
+$CMP Z84C20_copy
+D Parallel I/O, CMOS, DIP-40
+K Z80 PIO parallel
+F https://www.zilog.com/appnotes_download.php?FromPage=DirectLink&dn=PS0180&ft=Product%20Specification%20(Data%20Sheet)%20%20&f=YUhSMGNEb3ZMM2QzZHk1NmFXeHZaeTVqYjIwdlpHOWpjeTk2T0RBdmNITXdNVGd3TG5Ca1pnPT0=
+$ENDCMP
+#
+$CMP key_crosspoint
+D Symbol for building a logical key matrix
+K cross-point, crosspoint, key symbol
+$ENDCMP
+#
+#End Doc Library
