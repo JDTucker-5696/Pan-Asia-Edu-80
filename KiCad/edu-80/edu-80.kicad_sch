@@ -1,0 +1,208 @@
+(kicad_sch (version 20230121) (generator eeschema)
+
+  (uuid d19d6db6-a96a-43e3-aa50-c057821f7e22)
+
+  (paper "A")
+
+  (title_block
+    (title "Edu-80 Z80 Trainer")
+    (date "2023-06-01")
+    (rev "0.1")
+    (company "Strangers")
+  )
+
+  (lib_symbols
+  )
+
+
+  (sheet (at 80.01 25.4) (size 44.45 27.94) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000063df3281)
+    (property "Sheetname" "BreadBoard Interface" (at 80.01 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "BreadBoard.kicad_sch" (at 80.01 53.9246 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "edu-80"
+        (path "/d19d6db6-a96a-43e3-aa50-c057821f7e22" (page "3"))
+      )
+    )
+  )
+
+  (sheet (at 129.54 25.4) (size 43.18 31.75) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000063e35f90)
+    (property "Sheetname" "Decode ROM and RAM" (at 129.54 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Decode-ROM.kicad_sch" (at 129.54 57.7346 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "edu-80"
+        (path "/d19d6db6-a96a-43e3-aa50-c057821f7e22" (page "6"))
+      )
+    )
+  )
+
+  (sheet (at 177.8 63.5) (size 35.56 17.78) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000063e4dc54)
+    (property "Sheetname" "Keyboard and Display" (at 177.8 62.7884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Keyboard-Display.kicad_sch" (at 177.8 81.8646 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "edu-80"
+        (path "/d19d6db6-a96a-43e3-aa50-c057821f7e22" (page "10"))
+      )
+    )
+  )
+
+  (sheet (at 25.4 63.5) (size 12.7 10.16) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000063f40807)
+    (property "Sheetname" "Protected RAM" (at 25.4 62.7884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Protected RAM.kicad_sch" (at 25.4 74.2446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "edu-80"
+        (path "/d19d6db6-a96a-43e3-aa50-c057821f7e22" (page "4"))
+      )
+    )
+  )
+
+  (sheet (at 177.8 25.4) (size 45.72 20.32) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-0000641a1b60)
+    (property "Sheetname" "IO Addressing" (at 177.8 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "IO-Adddress.kicad_sch" (at 177.8 46.3046 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "edu-80"
+        (path "/d19d6db6-a96a-43e3-aa50-c057821f7e22" (page "7"))
+      )
+    )
+  )
+
+  (sheet (at 228.6 25.4) (size 12.7 10.16) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00006442bb97)
+    (property "Sheetname" "PIO & CTC" (at 228.6 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "PIO-CTC.kicad_sch" (at 228.6 36.1446 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "edu-80"
+        (path "/d19d6db6-a96a-43e3-aa50-c057821f7e22" (page "8"))
+      )
+    )
+  )
+
+  (sheet (at 177.8 101.6) (size 19.05 11.43) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-0000644ab222)
+    (property "Sheetname" "Power - +12V, +5V, GND, -5V, -24V, VF1, VF2" (at 177.8 100.8884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Power.kicad_sch" (at 177.8 113.6146 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "edu-80"
+        (path "/d19d6db6-a96a-43e3-aa50-c057821f7e22" (page "11"))
+      )
+    )
+  )
+
+  (sheet (at 80.01 63.5) (size 31.75 31.75) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000064e8f8f1)
+    (property "Sheetname" "Unprotected RAM" (at 80.01 62.7884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Unprotected RAM.kicad_sch" (at 80.01 95.8346 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "edu-80"
+        (path "/d19d6db6-a96a-43e3-aa50-c057821f7e22" (page "5"))
+      )
+    )
+  )
+
+  (sheet (at 129.54 63.5) (size 21.59 19.05) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-000065094c7d)
+    (property "Sheetname" "Audio, LEDs, Switches" (at 129.54 62.7884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Audio LEDs Switches.kicad_sch" (at 129.54 83.1346 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "edu-80"
+        (path "/d19d6db6-a96a-43e3-aa50-c057821f7e22" (page "9"))
+      )
+    )
+  )
+
+  (sheet (at 25.4 25.4) (size 49.53 29.21) (fields_autoplaced)
+    (stroke (width 0) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 00000000-0000-0000-0000-00006509b9c9)
+    (property "Sheetname" "Z80/Reset/Clock/IRQ" (at 25.4 24.6884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Pan-Asia Edu-80.kicad_sch" (at 25.4 55.1946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "edu-80"
+        (path "/d19d6db6-a96a-43e3-aa50-c057821f7e22" (page "2"))
+      )
+    )
+  )
+
+  (sheet (at 96.52 135.89) (size 39.37 36.83) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid cb53caef-bc58-434e-972b-3167244d61d3)
+    (property "Sheetname" "Power Supply" (at 96.52 135.1784 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Power_Supply.kicad_sch" (at 96.52 173.3046 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "edu-80"
+        (path "/d19d6db6-a96a-43e3-aa50-c057821f7e22" (page "12"))
+      )
+    )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
+  )
+)
