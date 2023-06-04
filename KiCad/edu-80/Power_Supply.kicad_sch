@@ -4,6 +4,14 @@
 
   (paper "A")
 
+  (title_block
+    (title "Edu-80 Z80 Trainer")
+    (date "2023-06-03")
+    (rev "0.1")
+    (company "Strangers")
+    (comment 1 "Author: James D. Tucker")
+  )
+
   (lib_symbols
     (symbol "Connector:Conn_WallPlug" (pin_numbers hide) (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
       (property "Reference" "P" (at -1.27 4.445 0)

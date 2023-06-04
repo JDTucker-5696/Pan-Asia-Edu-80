@@ -6,9 +6,10 @@
 
   (title_block
     (title "Edu-80 Z80 Trainer")
-    (date "2023-06-01")
+    (date "2023-06-03")
     (rev "0.1")
     (company "Strangers")
+    (comment 1 "Author: James D. Tucker")
   )
 
   (lib_symbols
@@ -117,14 +118,14 @@
     )
   )
 
-  (sheet (at 177.8 101.6) (size 19.05 11.43) (fields_autoplaced)
+  (sheet (at 215.9 113.03) (size 19.05 11.43) (fields_autoplaced)
     (stroke (width 0) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 00000000-0000-0000-0000-0000644ab222)
-    (property "Sheetname" "Power - +12V, +5V, GND, -5V, -24V, VF1, VF2" (at 177.8 100.8884 0)
+    (property "Sheetname" "Power - +12V, +5V, GND, -5V, -24V, VF1, VF2" (at 215.9 112.3184 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "Power.kicad_sch" (at 177.8 113.6146 0)
+    (property "Sheetfile" "Power.kicad_sch" (at 215.9 125.0446 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
@@ -185,14 +186,31 @@
     )
   )
 
-  (sheet (at 96.52 135.89) (size 39.37 36.83) (fields_autoplaced)
+  (sheet (at 83.82 119.38) (size 49.53 36.83) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid 400fb073-5ef0-450a-b07f-a4b615331875)
+    (property "Sheetname" "Modifications" (at 83.82 118.6684 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "Modifications.kicad_sch" (at 83.82 156.7946 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "edu-80"
+        (path "/d19d6db6-a96a-43e3-aa50-c057821f7e22" (page "13"))
+      )
+    )
+  )
+
+  (sheet (at 215.9 132.08) (size 39.37 36.83) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid cb53caef-bc58-434e-972b-3167244d61d3)
-    (property "Sheetname" "Power Supply" (at 96.52 135.1784 0)
+    (property "Sheetname" "Power Supply" (at 215.9 131.3684 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "Power_Supply.kicad_sch" (at 96.52 173.3046 0)
+    (property "Sheetfile" "Power_Supply.kicad_sch" (at 215.9 169.4946 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances

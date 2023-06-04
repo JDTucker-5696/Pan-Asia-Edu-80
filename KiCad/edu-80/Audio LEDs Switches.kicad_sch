@@ -4,6 +4,14 @@
 
   (paper "A")
 
+  (title_block
+    (title "Edu-80 Z80 Trainer")
+    (date "2023-06-03")
+    (rev "0.1")
+    (company "Strangers")
+    (comment 1 "Author: James D. Tucker")
+  )
+
   (lib_symbols
     (symbol "74xx:7400" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at 0 1.27 0)

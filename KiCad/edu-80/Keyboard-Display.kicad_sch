@@ -4,6 +4,14 @@
 
   (paper "A")
 
+  (title_block
+    (title "Edu-80 Z80 Trainer")
+    (date "2023-06-03")
+    (rev "0.1")
+    (company "Strangers")
+    (comment 1 "Author: James D. Tucker")
+  )
+
   (lib_symbols
     (symbol "Device:Q_PNP_CBE" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
       (property "Reference" "Q" (at 5.08 1.27 0)
@@ -796,84 +804,6 @@
         )
       )
     )
-    (symbol "edu-80-rescue:key_crosspoint-Edu-80_Symbol" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
-      (property "Reference" "CP??" (at 0 13.97 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Value" "Edu-80_Symbol_key_crosspoint" (at 0 12.7 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 12.7 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Datasheet" "" (at 0 12.7 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "key_crosspoint-Edu-80_Symbol_0_1"
-        (polyline
-          (pts
-            (xy 0 -1.27)
-            (xy 0 -3.81)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy -3.81 0)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 3.81 0)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.27)
-            (xy 0 -1.27)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 1.27)
-            (xy 0 3.81)
-          )
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-        (circle (center 0 0) (radius 1.27)
-          (stroke (width 0) (type solid))
-          (fill (type none))
-        )
-      )
-      (symbol "key_crosspoint-Edu-80_Symbol_1_1"
-        (pin passive line (at -3.81 0 0) (length 2.54) hide
-          (name "X1" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 3.81 270) (length 2.54) hide
-          (name "Y1" (effects (font (size 1.27 1.27))))
-          (number "2" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 3.81 0 180) (length 2.54) hide
-          (name "X3" (effects (font (size 1.27 1.27))))
-          (number "3" (effects (font (size 1.27 1.27))))
-        )
-        (pin passive line (at 0 -3.81 90) (length 2.54) hide
-          (name "Y2" (effects (font (size 1.27 1.27))))
-          (number "4" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "key_crosspoint_1" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "CP??" (at -7.62 5.08 0)
         (effects (font (size 1.27 1.27)))
@@ -1264,6 +1194,474 @@
         )
       )
     )
+    (symbol "key_crosspoint_14" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_14_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_14_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_15" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_15_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_15_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_16" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_16_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_16_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_17" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_17_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_17_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_18" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_18_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_18_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_19" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_19_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_19_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "key_crosspoint_2" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "CP??" (at -7.62 5.08 0)
         (effects (font (size 1.27 1.27)))
@@ -1342,6 +1740,786 @@
         )
       )
     )
+    (symbol "key_crosspoint_20" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_20_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_20_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_21" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_21_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_21_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_22" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_22_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_22_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_23" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_23_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_23_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_24" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_24_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_24_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_25" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_25_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_25_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_26" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_26_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_26_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_27" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_27_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_27_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_28" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_28_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_28_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_29" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_29_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_29_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "key_crosspoint_3" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "CP??" (at -7.62 5.08 0)
         (effects (font (size 1.27 1.27)))
@@ -1402,6 +2580,474 @@
         )
       )
       (symbol "key_crosspoint_3_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_30" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_30_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_30_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_31" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_31_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_31_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_32" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_32_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_32_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_33" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_33_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_33_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_34" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_34_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_34_1_1"
+        (pin passive line (at -3.81 0 0) (length 2.54) hide
+          (name "X1" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 3.81 0) (length 2.54) hide
+          (name "Y1" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 3.81 0 180) (length 2.54) hide
+          (name "X2" (effects (font (size 1.27 1.27))))
+          (number "3" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -3.81 180) (length 2.54) hide
+          (name "Y2" (effects (font (size 1.27 1.27))))
+          (number "4" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "key_crosspoint_35" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+      (property "Reference" "CP??" (at -7.62 5.08 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "key_crosspoint" (at -3.81 2.54 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 12.7 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "key_crosspoint_35_0_1"
+        (polyline
+          (pts
+            (xy 0 -1.27)
+            (xy 0 -3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy -3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 3.81 0)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 -1.27)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.27)
+            (xy 0 3.81)
+          )
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+        (circle (center 0 0) (radius 1.27)
+          (stroke (width 0) (type solid))
+          (fill (type none))
+        )
+      )
+      (symbol "key_crosspoint_35_1_1"
         (pin passive line (at -3.81 0 0) (length 2.54) hide
           (name "X1" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
@@ -4122,7 +5768,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 173.99 144.78 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_14") (lib_id "Edu-80_Symbols:key_crosspoint") (at 173.99 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e86206)
     (property "Reference" "CP11" (at 171.45 144.78 0)
@@ -4150,7 +5796,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 173.99 149.86 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_15") (lib_id "Edu-80_Symbols:key_crosspoint") (at 173.99 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e8620c)
     (property "Reference" "CP12" (at 171.45 149.86 0)
@@ -4178,7 +5824,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 173.99 154.94 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_16") (lib_id "Edu-80_Symbols:key_crosspoint") (at 173.99 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e86212)
     (property "Reference" "CP13" (at 171.45 154.94 0)
@@ -4234,7 +5880,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 181.61 144.78 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_17") (lib_id "Edu-80_Symbols:key_crosspoint") (at 181.61 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e869f8)
     (property "Reference" "CP21" (at 179.07 144.78 0)
@@ -4262,7 +5908,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 181.61 149.86 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_18") (lib_id "Edu-80_Symbols:key_crosspoint") (at 181.61 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e869fe)
     (property "Reference" "CP22" (at 179.07 149.86 0)
@@ -4290,7 +5936,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 181.61 154.94 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_19") (lib_id "Edu-80_Symbols:key_crosspoint") (at 181.61 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e86a04)
     (property "Reference" "CP23" (at 179.07 154.94 0)
@@ -4318,13 +5964,13 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 189.23 139.7 270) (unit 1)
+  (symbol (lib_name "key_crosspoint_20") (lib_id "Edu-80_Symbols:key_crosspoint") (at 189.23 139.7 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e879a0)
     (property "Reference" "CP30" (at 189.23 137.16 0)
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
-    (property "Value" "C" (at 191.77 135.89 0)
+    (property "Value" "C" (at 185.42 137.16 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (at 201.93 139.7 0)
@@ -4346,7 +5992,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 189.23 144.78 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_21") (lib_id "Edu-80_Symbols:key_crosspoint") (at 189.23 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e879a6)
     (property "Reference" "CP31" (at 186.69 144.78 0)
@@ -4374,7 +6020,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 189.23 149.86 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_22") (lib_id "Edu-80_Symbols:key_crosspoint") (at 189.23 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e879ac)
     (property "Reference" "CP32" (at 186.69 149.86 0)
@@ -4402,7 +6048,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 189.23 154.94 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_23") (lib_id "Edu-80_Symbols:key_crosspoint") (at 189.23 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e879b2)
     (property "Reference" "CP33" (at 186.69 154.94 0)
@@ -4430,7 +6076,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 196.85 139.7 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_24") (lib_id "Edu-80_Symbols:key_crosspoint") (at 196.85 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e88262)
     (property "Reference" "CP40" (at 194.31 139.7 0)
@@ -4458,7 +6104,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 196.85 144.78 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_25") (lib_id "Edu-80_Symbols:key_crosspoint") (at 196.85 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e88268)
     (property "Reference" "CP41" (at 194.31 144.78 0)
@@ -4486,7 +6132,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 196.85 149.86 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_26") (lib_id "Edu-80_Symbols:key_crosspoint") (at 196.85 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e8826e)
     (property "Reference" "CP42" (at 194.31 149.86 0)
@@ -4514,7 +6160,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 196.85 154.94 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_27") (lib_id "Edu-80_Symbols:key_crosspoint") (at 196.85 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e88274)
     (property "Reference" "CP43" (at 194.31 154.94 0)
@@ -4542,7 +6188,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 204.47 139.7 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_28") (lib_id "Edu-80_Symbols:key_crosspoint") (at 204.47 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e88b8c)
     (property "Reference" "CP50" (at 201.93 139.7 0)
@@ -4570,7 +6216,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 204.47 144.78 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_29") (lib_id "Edu-80_Symbols:key_crosspoint") (at 204.47 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e88b92)
     (property "Reference" "CP51" (at 201.93 144.78 0)
@@ -4598,7 +6244,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 204.47 149.86 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_30") (lib_id "Edu-80_Symbols:key_crosspoint") (at 204.47 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e88b98)
     (property "Reference" "CP52" (at 201.93 149.86 0)
@@ -4626,7 +6272,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 204.47 154.94 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_31") (lib_id "Edu-80_Symbols:key_crosspoint") (at 204.47 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e88b9e)
     (property "Reference" "CP53" (at 201.93 154.94 0)
@@ -4770,7 +6416,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 212.09 139.7 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_32") (lib_id "Edu-80_Symbols:key_crosspoint") (at 212.09 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e8951e)
     (property "Reference" "CP60" (at 209.55 139.7 0)
@@ -4798,7 +6444,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 212.09 144.78 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_33") (lib_id "Edu-80_Symbols:key_crosspoint") (at 212.09 144.78 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e89524)
     (property "Reference" "CP61" (at 209.55 144.78 0)
@@ -4826,7 +6472,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 212.09 149.86 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_34") (lib_id "Edu-80_Symbols:key_crosspoint") (at 212.09 149.86 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e8952a)
     (property "Reference" "CP62" (at 209.55 149.86 0)
@@ -4854,7 +6500,7 @@
     )
   )
 
-  (symbol (lib_id "edu-80-rescue:key_crosspoint-Edu-80_Symbol") (at 212.09 154.94 0) (unit 1)
+  (symbol (lib_name "key_crosspoint_35") (lib_id "Edu-80_Symbols:key_crosspoint") (at 212.09 154.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000063e89530)
     (property "Reference" "CP63" (at 209.55 154.94 0)
