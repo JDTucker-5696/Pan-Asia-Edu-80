@@ -16,6 +16,14 @@
   )
 
 
+  (text_box "Change the matrix switches to two-terminal footprints."
+    (at 177.8 87.63 0) (size 35.56 8.89)
+    (stroke (width 0) (type default))
+    (fill (type none))
+    (effects (font (face "KiCad Font") (size 1.27 1.27) (thickness 0.254) bold))
+    (uuid e1c86ad4-e249-40be-a9e8-5982ef9f22f9)
+  )
+
   (sheet (at 80.01 25.4) (size 44.45 27.94) (fields_autoplaced)
     (stroke (width 0) (type solid))
     (fill (color 0 0 0 0.0000))
